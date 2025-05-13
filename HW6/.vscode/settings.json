@@ -1,0 +1,9 @@
+{
+    "java.project.sourcePaths": ["src"],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+    "java.checkstyle.configuration": "${workspaceFolder}/CS1332-checkstyle.xml",
+    "java.debug.settings.onBuildFailureProceed": true
+}
