@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metallacycle &middot; Visible Spectrometry</title>
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="uv-vis.js"></script>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <div class="navbar navbar-default">
+        <a class="navbar-brand" href="/home/">Michael Evans</a>
+        <ul class="nav navbar-nav">
+            <li id="home-nav-link"><a href="/home/">Home</a>
+            </li>
+            <li id="teaching-nav-link"><a href="/home/teaching/">Teaching</a>
+            </li>
+            <li id="projects-nav-link"><a href="/home/projects/">Projects</a>
+            </li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Blogs <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="http://graphiteworks.wordpress.com" target="_blank">Cheersical Education</a>
+                    </li>
+                    <li><a href="http://organometallicchem.wordpress.com" target="_blank">The Organometallic Reader</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="active"><a href="/chemistry/">Chemistry</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="page-header">
+            <ol class="breadcrumb">
+                <li><a href="/chemistry">Chemistry</a>
+                </li>
+                <li class="active">Visible Spectroscopy</li>
+            </ol>
+            <h1>
+                Visible Spectroscopy
+                <small>concepts and tools</small>
+            </h1>
+        </div>
+
+        <p>
+            Visible spectroscopy is used to observe electronic transitions in atoms and a few specialized molecules.
+        </p>
+
+        <h2>Atomic Emission Spectra</h2>
+        <p>
+            Excited atoms emit light at discrete wavelengths. To see this in action, try putting a solution of a metal salt in a flame! Electrons are excited to higher energy levels by the flame, and they emit light as they return to the ground state. Many of these transitions have energies that correspond to the visible region of the electromagnetic spectrum. The differences in energy between levels depend on the identity of the atom, so an atomic spectrum can serve as a "fingerprint" for the elements. <!-- Some famous atomic emission spectra are provided below. --> If you know wavelengths and would like to create a spectral image from your numbers, try the custom builder.
+        </p>
+
+        <h3>Create your own Spectrum!</h3>
+        <p>
+            Provide a comma-separated list of wavelengths (in nanometers) to create your own atomic spectrum. Need to convert to nanometers? Give <a href="http://www.wolframalpha.com/input/?i=x+wavenumbers+in+nm" target="_blank">Wolfram|Alpha</a> a try. The spectrum below runs from 380 nm (violet) to 780 nm (red).
+        </p>
+        <div class="input-group form-group" style="width: 340px;">
+            <input type="text" class="form-control" id="custom-lines" placeholder="Comma-separated wavelengths (nm)" onkeypress="if (enterPressed(event)) showCustomSpectrum();" />
+            <span class="input-group-btn">
+                <button class="btn btn-primary" onclick="showCustomSpectrum();">Display</button>
+            </span>
+        </div>
+        <p id="spectrum-custom" style="height: 100px;">
+        </p>
+
+        <!-- <h3>Mercury</h3>
+        <p id="spectrum-hg" style="height: 100px;">
+        </p>
+
+        <h3>Hydrogen</h3>
+        <p id="spectrum-h" style="height: 100px;">
+        </p>
+
+        <h3>Neon</h3>
+        <p id="spectrum-ne" style="height: 100px;">
+        </p>
+
+        <h3>Sodium</h3>
+        <p id="spectrum-na" style="height: 100px;">
+        </p> -->
+
+        <p><a href="../">&larr; Back</a>
+        </p>
+    </div>
+
+    <script type="text/javascript">
+    function showCustomSpectrum() {
+        var nmArray = $('#custom-lines').val().split(/,[ ]*/g);
+        for (var i = 0; i < nmArray.length; i++) {
+            nmArray[i] = parseInt(nmArray[i]);
+        }
+        displaySpectrumInElement(nmArray, $('#spectrum-custom'));
+    }
+
+    function enterPressed(e) {
+        var characterCode
+        if (e && e.which) {
+            e = e;
+            characterCode = e.which;
+        } else {
+            e = event;
+            characterCode = e.keyCode;
+        }
+        return (characterCode == 13);
+    }
+
+    $(document).ready(function() {
+        var op;
+        var mercury = [404, 407, 486, 492, 546, 577, 579];
+        var hydrogen = [410, 435, 485, 650];
+        var neon = [540, 585, 588, 603, 607, 616, 622, 627, 633, 638, 640, 651, 660, 693, 703];
+        var sodium = [569, 589, 590];
+        displaySpectrumInElement(mercury, $('#spectrum-hg'));
+        displaySpectrumInElement(hydrogen, $('#spectrum-h'));
+        displaySpectrumInElement(neon, $('#spectrum-ne'));
+        displaySpectrumInElement(sodium, $('#spectrum-na'));
+        displaySpectrumInElement([], $('#spectrum-custom'));
+    });
+    </script>
+</body>
+
+</html>

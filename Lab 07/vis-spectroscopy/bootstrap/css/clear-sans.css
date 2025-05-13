@@ -1,0 +1,11 @@
+@font-face
+{
+    font-family: "Clear Sans";
+    src: url("../fonts/clear-sans/ClearSans-Regular.ttf")
+}
+
+body {
+    font-family: "Clear Sans", "Helvetica Neue", Helvetica, sans-serif;
+    /* always set a fallback font, if the font fails 
+       to load or the client doesn't understand css3
+}
