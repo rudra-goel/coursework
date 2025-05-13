@@ -1,0 +1,16 @@
+#
+# Edit Lock-Stake file. CAUTION: Please do not change.
+#
+# Information about current Edit Lock Owner.
+#
+LockStakeVersion               1.1
+LoginName                      rgoel68
+HostName                       ece-linlabsrv01.ece.gatech.edu
+ProcessIdentifier              2323545
+ProcessCreationTime_UTC        1745267785
+ProcessCreationTime_Readable   Mon Apr 21 16:36:25 2025 EDT
+AppIdentifier                  /tools/software/cadence/ic/latest/tools.lnx86/dfII/bin/64bit/virtuoso
+OSType                         lnx86
+ReasonForPlacingEditLock       Set lock by hiiLockFile
+FilePathUsedToEditLock         /nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service12.log
+TimeEditLocked                 Mon Apr 21 16:36:25 2025 EDT

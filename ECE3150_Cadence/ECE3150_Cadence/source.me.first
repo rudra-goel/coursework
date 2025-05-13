@@ -1,0 +1,43 @@
+
+if ( $?LD_LIBRARY_PATH != 1 ) then
+    setenv LD_LIBRARY_PATH ""
+endif
+
+setenv CLS_CDSD_COMPATIBILITY_LOCKING NO
+set base_dir = "/tools/linsoft2/cadence/ic612hf517"
+set cad = "/tools/linsoft2/cadence/spb1601/tools.lnx86"
+setenv CDS $base_dir
+setenv CDK_DIR /tools/linsoft2/cadence/NCSU/ncsu-cdk-oa-1.6.0.beta
+setenv MMSIMHOME /tools/linsoft2/cadence/mmsim70
+setenv LANG C
+setenv CDS_AUTO_64BIT AUTO
+setenv CDS_Netlisting_Mode Analog
+setenv PATH "${PATH}:$CDS/tools/bin:$CDS/tools/dfII/bin"
+
+alias prepend 'if (-d \!:2) if ("$\!:1" \!~ *"\!:2"*) setenv \!:1 "\!:2":${\!:1}'
+
+prepend PATH $CDS/tools/bin
+prepend PATH $CDS/tools/dfII/bin
+prepend PATH $CDS/tools/gsEnsemble/bin
+prepend PATH $CDS/tools/concice/bin
+prepend PATH $CDS/tools/dracula/bin
+prepend PATH $MMSIMHOME/tools/bin
+prepend PATH $MMSIMHOME/tools/assura/bin
+
+setenv LD_LIBRARY_PATH "$MMSIMHOME/tools/lib:${LD_LIBRARY_PATH}"
+setenv MGC_HOME /tools/linsoft2/mentor/calibre/ixl_cal_2009.4_31.27
+
+setenv CDSHOME /tools/linsoft2/cadence/ic612hf517
+setenv USE_NCSU_CDK
+
+source /tools/linsoft2/cadence/ic612hf517/cshrc.meta
+source /tools/linsoft2/mentor/calibre/ixl_cal_2009.4_31.27/meta.cshrc
+source /tools/linsoft2/synopsys/hspice/cshrc.meta
+source /tools/linsoft2/synopsys/waveview/cshrc.meta
+
+setenv CDS_Netlisting_Mode Analog
+
+set LABDIR = "$cwd"
+
+setenv PDK_DIR $LABDIR/FreePDK45
+setenv LAB_DIR $LABDIR

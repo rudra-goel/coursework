@@ -1,0 +1,125 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  project3
+* Top Cell Name: 16_bit_ripple_carry_adder
+* View Name:     schematic
+* Netlisted on:  Apr 18 03:43:35 2025
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: project_1
+* Cell Name:    inverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inverter A A~
+*.PININFO A:I A~:O
+MM0 A~ A vdd! vdd! PMOS_VTL W=337.5n L=50n m=1
+MM1 A~ A gnd! gnd! NMOS_VTL W=90n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: project_1
+* Cell Name:    XOR2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT XOR2 A B Out
+*.PININFO A:I B:I Out:O
+MM3 Out net14 net4 vdd! PMOS_VTL W=337.5n L=50n m=1
+MM2 Out net3 net8 vdd! PMOS_VTL W=337.5n L=50n m=1
+MM1 net8 B vdd! vdd! PMOS_VTL W=337.5n L=50n m=1
+MM0 net4 A vdd! vdd! PMOS_VTL W=337.5n L=50n m=1
+MM7 net17 net14 gnd! gnd! NMOS_VTL W=180.0n L=50n m=1
+MM6 net21 B gnd! gnd! NMOS_VTL W=180.0n L=50n m=1
+MM5 Out A net21 gnd! NMOS_VTL W=180.0n L=50n m=1
+MM4 Out net3 net17 gnd! NMOS_VTL W=180.0n L=50n m=1
+XI1 B net14 / inverter
+XI0 A net3 / inverter
+.ENDS
+
+************************************************************************
+* Library Name: project_1
+* Cell Name:    NAND2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT NAND2 A B Out
+*.PININFO A:I B:I Out:O
+MM1 Out B vdd! vdd! PMOS_VTL W=337.5n L=50n m=1
+MM0 Out A vdd! vdd! PMOS_VTL W=337.5n L=50n m=1
+MM3 net9 B gnd! gnd! NMOS_VTL W=180.0n L=50n m=1
+MM2 Out A net9 gnd! NMOS_VTL W=180.0n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: project_3
+* Cell Name:    full_adder_1_bit
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT full_adder_1_bit A B C_in C_out S
+*.PININFO A:I B:I C_in:I C_out:O S:O
+XI1 net3 C_in S / XOR2
+XI0 A B net3 / XOR2
+XI4 net3 C_in net11 / NAND2
+XI3 net11 net9 C_out / NAND2
+XI2 A B net9 / NAND2
+.ENDS
+
+************************************************************************
+* Library Name: project_3
+* Cell Name:    4_bit_ripple_carry_adder
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT 4_bit_ripple_carry_adder A<3> A<2> A<1> A<0> B<3> B<2> B<1> B<0> C_in 
++ C_out Sout<3> Sout<2> Sout<1> Sout<0>
+*.PININFO A<3>:I A<2>:I A<1>:I A<0>:I B<3>:I B<2>:I B<1>:I B<0>:I C_in:I 
+*.PININFO C_out:O Sout<3>:O Sout<2>:O Sout<1>:O Sout<0>:O
+XI3 A<3> B<3> net15 C_out Sout<3> / full_adder_1_bit
+XI2 A<2> B<2> net10 net15 Sout<2> / full_adder_1_bit
+XI1 A<1> B<1> net1 net10 Sout<1> / full_adder_1_bit
+XI0 A<0> B<0> C_in net1 Sout<0> / full_adder_1_bit
+.ENDS
+
+************************************************************************
+* Library Name: project3
+* Cell Name:    16_bit_ripple_carry_adder
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT 16_bit_ripple_carry_adder A<15> A<14> A<13> A<12> A<11> A<10> A<9> 
++ A<8> A<7> A<6> A<5> A<4> A<3> A<2> A<1> A<0> B<15> B<14> B<13> B<12> B<11> 
++ B<10> B<9> B<8> B<7> B<6> B<5> B<4> B<3> B<2> B<1> B<0> Cin Cout Sout<15> 
++ Sout<14> Sout<13> Sout<12> Sout<11> Sout<10> Sout<9> Sout<8> Sout<7> Sout<6> 
++ Sout<5> Sout<4> Sout<3> Sout<2> Sout<1> Sout<0>
+*.PININFO A<15>:I A<14>:I A<13>:I A<12>:I A<11>:I A<10>:I A<9>:I A<8>:I A<7>:I 
+*.PININFO A<6>:I A<5>:I A<4>:I A<3>:I A<2>:I A<1>:I A<0>:I B<15>:I B<14>:I 
+*.PININFO B<13>:I B<12>:I B<11>:I B<10>:I B<9>:I B<8>:I B<7>:I B<6>:I B<5>:I 
+*.PININFO B<4>:I B<3>:I B<2>:I B<1>:I B<0>:I Cin:I Cout:O Sout<15>:O 
+*.PININFO Sout<14>:O Sout<13>:O Sout<12>:O Sout<11>:O Sout<10>:O Sout<9>:O 
+*.PININFO Sout<8>:O Sout<7>:O Sout<6>:O Sout<5>:O Sout<4>:O Sout<3>:O 
+*.PININFO Sout<2>:O Sout<1>:O Sout<0>:O
+XI3 A<15> A<14> A<13> A<12> B<15> B<14> B<13> B<12> net15 Cout Sout<15> 
++ Sout<14> Sout<13> Sout<12> / 4_bit_ripple_carry_adder
+XI2 A<11> A<10> A<9> A<8> B<11> B<10> B<9> B<8> net10 net15 Sout<11> Sout<10> 
++ Sout<9> Sout<8> / 4_bit_ripple_carry_adder
+XI1 A<7> A<6> A<5> A<4> B<7> B<6> B<5> B<4> net5 net10 Sout<7> Sout<6> Sout<5> 
++ Sout<4> / 4_bit_ripple_carry_adder
+XI0 A<3> A<2> A<1> A<0> B<3> B<2> B<1> B<0> Cin net5 Sout<3> Sout<2> Sout<1> 
++ Sout<0> / 4_bit_ripple_carry_adder
+.ENDS
+

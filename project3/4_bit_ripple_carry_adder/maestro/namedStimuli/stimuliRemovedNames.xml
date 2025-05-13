@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stimuliremovedset>
+    <namedstimuli>
+        <stimuliname>A2</stimuliname>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A3</stimuliname>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A0</stimuliname>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>A1</stimuliname>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B2</stimuliname>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B3</stimuliname>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B0</stimuliname>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>B1</stimuliname>
+    </namedstimuli>
+    <namedstimuli>
+        <stimuliname>Cin</stimuliname>
+    </namedstimuli>
+</stimuliremovedset>

@@ -1,0 +1,72 @@
+********************************************************************************
+Product   : Virtuoso(R) XStream Out
+Program   : @(#)$CDS: strmout version IC23.1-64b 01/14/2025 22:29 (cpgbld17) $
+          : sub-version  IC23.1-64b.ISR12.37 
+Started at: 17-Apr-2025  16:24:03
+User Name : rgoel68
+Host Name : ece-linlabsrv01.ece.gatech.edu
+Directory : /nethome/rgoel68/ECE3150
+CADENCE Design Systems, Inc.
+********************************************************************************
+Info: Cellview Rev Num:99,  Tech Rev Num:59
+
+
+                       Individual Cell Statistics - Basic Objects
+---------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               Instance Array   Polygon  Rect   Path   PathSeg   Text   TextDisplay   Line   Dot   Arc   Donut   Ellipse 
+---------------------------------------------------------------------------------------------------------------------------------------
+project3/full_adder_1_bit/layout                                0        0       0        319    0      0         15     0             0      0     0     0       0       
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Individual Cell Statistics - Advanced Objects
+--------------------------------------------------------------------------------------------------------------------------------------------
+Library/Cell/View               PRBdy    OtherBdy   AreaBlkg   LayerBlkg  AreaHalo   Row   Marker   Stitch   CustVia   StdVia    CdsGenVia
+--------------------------------------------------------------------------------------------------------------------------------------------
+project3/full_adder_1_bit/layout                                0        0          0          0          0          0     0        0        0         0         0        
+---------------------------------------------------------------------------------------------------------------------------------------
+
+                       Statistics of Layers 
+---------------------------------------------------------------------------------------------------------------------------------------
+Cadence         Cadence         Stream  Stream   
+Layer           Purpose         Layer   Datatype  Polygon  Rect     Path     Text     TextDisplay   Line Dot Arc Donut Ellipse Pathseg
+---------------------------------------------------------------------------------------------------------------------------------------
+pwell           drawing         2       0         0        10       0        0        0             0    0   0   0     0      0      
+nwell           drawing         3       0         0        10       0        0        0             0    0   0   0     0      0      
+active          drawing         1       0         0        28       0        0        0             0    0   0   0     0      0      
+nimplant        drawing         4       0         0        14       0        0        0             0    0   0   0     0      0      
+pimplant        drawing         5       0         0        14       0        0        0             0    0   0   0     0      0      
+poly            drawing         9       0         0        36       0        0        0             0    0   0   0     0      0      
+contact         drawing         10      0         0        73       0        0        0             0    0   0   0     0      0      
+metal1          drawing         11      0         0        90       0        14       0             0    0   0   0     0      0      
+via1            drawing         12      0         0        20       0        0        0             0    0   0   0     0      0      
+metal2          drawing         13      0         0        24       0        1        0             0    0   0   0     0      0      
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Summary of Objects Translated:
+	Scalar Instances:		0
+	Array Instances:		0
+	Polygons:			0
+	Paths:				0
+	Rectangles:			319
+	Lines:				0
+	Arcs:				0
+	Donuts:				0
+	Dots:				0
+	Ellipses:			0
+	Boundaries:			0
+	Area Blockages:			0
+	Layer Blockages:		0
+	Area Halos:			0
+	Markers:			0
+	Rows:				0
+	Stitches:			0
+	Standard Vias:			0
+	Custom Vias:			0
+	CdsGen Vias:			0
+	Pathsegs:			0
+	Text:				15
+	TextDisplay:		0
+	Cells:				1
+Design Libraries: 
+
+DEFINE project3	/nethome/rgoel68/ECE3150/project3

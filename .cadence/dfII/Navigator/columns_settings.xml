@@ -1,0 +1,12 @@
+<Columns_settings>
+ <View type="Layout">
+  <Set name="All ">
+   <Column visible="true" name="DI Status"/>
+   <Column visible="true" name="DI Profile"/>
+  </Set>
+  <Set name="Net">
+   <Column visible="true" name="DI Status"/>
+   <Column visible="true" name="DI Profile"/>
+  </Set>
+ </View>
+</Columns_settings>

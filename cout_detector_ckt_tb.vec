@@ -1,0 +1,35 @@
+
+;this is the testbench for the Cout Correction Circuit that will drive the output Twos Complement in the Synchronous and programmable adder/subtractor
+ 
+;we will be perfoming a vectore simulation for this design
+
+radix	1 1				; define the radix for each input
+
+vname 	Cout Ctrl				; define the names of the vectors
+
+io	i i				; define all the vectors to be inputs
+
+
+tunit	ns				; specify the unit of time
+
+trise	.01				; 1 ps rise time
+tfall	.01				; 1ps fall time
+
+vih	1.0				; the high voltage of the input
+vol	0.0				; the low voltage of the input
+
+
+voh	0.9				; 90% for rise time delay
+vol 	0.1				; 10% for fall time delay
+
+
+; this following part is the actual vector simulation 
+; t	Cout	Ctrl
+
+0	0	0
+2	0	1
+4	1	0
+6	1	1
+
+
+

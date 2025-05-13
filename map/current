@@ -1,0 +1,25 @@
+( ( nil
+  version "2.1"
+  mapType "incremental"
+  blockName "16_bit_ripple_carry_adder"
+  repList "auCdl schematic"
+  stopList "auCdl"
+  globalList "gnd! vdd!"
+  hierDelim "."
+  netlistDir "/nethome/rgoel68/ECE3150"
+ )
+( model
+( "project3/16_bit_ripple_carry_adder/schematic" "16_bit_ripple_carry_adder" )
+( "project_1/inverter/schematic" "inverter" )
+( "project_1/XOR2/schematic" "XOR2" )
+( "project_3/full_adder_1_bit/schematic" "full_adder_1_bit" )
+( "project_1/NAND2/schematic" "NAND2" )
+( "project_3/4_bit_ripple_carry_adder/schematic" "4_bit_ripple_carry_adder" )
+ )
+( "16_bit_ripple_carry_adder" "ihnl/cds5/map" )
+( "NAND2" "ihnl/cds2/map" )
+( "inverter" "ihnl/cds0/map" )
+( "XOR2" "ihnl/cds1/map" )
+( "full_adder_1_bit" "ihnl/cds3/map" )
+( "4_bit_ripple_carry_adder" "ihnl/cds4/map" )
+ )

@@ -1,0 +1,32 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  project_1
+* Top Cell Name: inverter
+* View Name:     schematic
+* Netlisted on:  Mar  6 00:11:54 2025
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: project_1
+* Cell Name:    inverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inverter input_pin output_pin
+*.PININFO input_pin:I output_pin:O
+MM0 output_pin input_pin vdd! vdd! PMOS_VTL W=337.5n L=50n m=1
+MM1 output_pin input_pin gnd! gnd! NMOS_VTL W=90n L=50n m=1
+.ENDS
+

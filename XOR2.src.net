@@ -1,0 +1,52 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  project3
+* Top Cell Name: XOR2
+* View Name:     schematic
+* Netlisted on:  Apr 17 15:32:13 2025
+************************************************************************
+
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL gnd!
++        vdd!
+
+*.PIN gnd!
+*+    vdd!
+
+************************************************************************
+* Library Name: project_1
+* Cell Name:    inverter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT inverter A A~
+*.PININFO A:I A~:O
+MM0 A~ A vdd! vdd! PMOS_VTL W=337.5n L=50n m=1
+MM1 A~ A gnd! gnd! NMOS_VTL W=90n L=50n m=1
+.ENDS
+
+************************************************************************
+* Library Name: project3
+* Cell Name:    XOR2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT XOR2 A B Out
+*.PININFO A:I B:I Out:O
+MM3 Out net14 net4 vdd! PMOS_VTL W=337.5n L=50n m=1
+MM2 Out net3 net8 vdd! PMOS_VTL W=337.5n L=50n m=1
+MM1 net8 B vdd! vdd! PMOS_VTL W=337.5n L=50n m=1
+MM0 net4 A vdd! vdd! PMOS_VTL W=337.5n L=50n m=1
+MM7 net17 net14 gnd! gnd! NMOS_VTL W=180.0n L=50n m=1
+MM6 net21 B gnd! gnd! NMOS_VTL W=180.0n L=50n m=1
+MM5 Out A net21 gnd! NMOS_VTL W=180.0n L=50n m=1
+MM4 Out net3 net17 gnd! NMOS_VTL W=180.0n L=50n m=1
+XI1 B net14 / inverter
+XI0 A net3 / inverter
+.ENDS
+

@@ -1,0 +1,97 @@
+\# Program start time:     UTC 2025.04.21 02:48:40.105
+\# Local time: EDT (UTC-04:00) 2025.04.20 22:48:40.105
+\o Program:		@(#)$CDS: Virtuoso Studio version IC23.1-64b 01/14/2025 22:42 (cpgbld16) $
+\o Hierarchy:		/tools/software/cadence/ic/23.10.120/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC23.1-64b.ISR12.37  (64-bit addresses)
+\# Command line:	/tools/software/cadence/ic/latest/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost ece-linlabsrv01.ece.gatech.edu -beanport 11608 -beanbinlog  -beanLogFile /nethome/rgoel68/ECE3150/logs_rgoel68/logs0/amps_Service7.log -mpssession virtuoso3268763 -mpshost ece-linlabsrv01.ece.gatech.edu -davinciService DaVinciService_3268763_1745193194 -scopedPid 3268763 -axlSession fnxSession2 -axlServiceIdFlag 7 -uuid abf6c276-2601-402b-8588-73366a113d7e -heartbeat /dev/shm/swift-heartbeat.fQzBiSRgGS -log /nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service7.log -adeBrokerAddress ece-linlabsrv01.ece.gatech.edu:45663 -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D65B0C578C406D07B6FA78410926AD02470F28B50992BD92E69ED90048F74DD2F32AE9C019928D92E0EE63D1A4E03D44800001DB4 -interactive -offlineExprEval -upfrontMode -fenixMode explorer -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	ece-linlabsrv01.ece.gatech.edu (x86_64)
+\# Operating system:	Linux 4.18.0-553.44.1.el8_10.x86_64 #1 SMP Wed Mar 5 10:48:41 EST 2025
+\# Linux /etc/issue:	****************************************************************************
+\# Linux /etc/issue:	This computer system is the property of the Georgia Institute of Technology.
+\# Linux /etc/issue:	Any user of this system must comply with all Institute and Board of Regents
+\# Linux /etc/issue:	policies, including the Acceptable Use Policy, Cyber Security Policy and
+\# X display name (WxH):	:4474 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        752 MB
+\# Available memory:	    168,761 MB
+\# System memory:	    256,871 MB
+\# Maximum memory size:	    256,296 MB
+\# Max mem available:	    168,937 MB
+\# Initial memory used:	        177 MB
+\#        process size:	      1,713 MB
+\# Thread usage limits (effective/default):	maxthreads 764799/764799 maxload 112.00/112.00
+\# Qt version:		5.15.9
+\# Window Manager:	other
+\# User Name:		rgoel68
+\o Working Directory:	ece-linlabsrv01.ece.gatech.edu:/nethome/rgoel68/ECE3150
+\# Process Id:		2707482
+\o 
+\o COPYRIGHT (C) 1992-2025  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2025  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o INFO (CMGR-2107): The following Constraint Manager configuration files have been combined together (in decreasing order of precedence, specified by your search path - setup.loc) 
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/ci/config.xml
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/ci/config.xml
+\o INFO (CMGR-2107): The following Constraint Manager configuration files have been combined together (in decreasing order of precedence, specified by your search path - setup.loc) 
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/caa/config.xml
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/caa/config.xml
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading im.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pegasusui.cxt
+\# 0 lines crushed from the buffer
+\# 0 lines crushed from the buffer
+\o INFO (DB-170018): (dbPanic) dumping stack
+\o libvirtuos_sh.so:voStackTrace+59()
+\o virtuoso:dbPanic+374()
+\o libvirtuos_sh.so:voDoAbortFuncs+229()
+\# Memory report: using         457 MB, process size 2,060 MB at UTC 2025.04.21 02:48:43.038
+\o libvirtuos_sh.so:voSigAbortInfo+361()
+\o libpthread.so.0:__restore_rt+0()
+\o libc.so.6:__select+95()
+\o libsman_sh.so:smnSleepMillis+75()
+\o libcdsIlIpc_sh.so:_ZL7ipcRecviPcm+175()
+\o libcdsIlIpc_sh.so:_ZL20_ipcAcceptConnectioni+241()
+\o libcdsIlIpc_sh.so:_Z15_ipcTimeoutLoopj+514()
+\o libcdsIlIpc_sh.so:ipcxWait+703()
+\o libil_sh.so:iliVcodeEval2C+11788()
+\o libil_sh.so:iliVcodeEval2+69()
+\o libil_sh.so:ilxSkillEval2+225()
+\o libil_sh.so:iliLoadPort+867()
+\o libil_sh.so:iliVcodeEval2C+11788()
+\o libil_sh.so:iliVcodeEval2+69()
+\o libil_sh.so:ilxSkillEval2+225()
+\o libil_sh.so:_ilTopLevelSet+159()
+\o virtuoso:pvsInit+1373()
+\o libil_sh.so:iliVcodeEval2C+9245()
+\o libil_sh.so:iliVcodeEval2+69()
+\o libil_sh.so:ilxSkillEval2+225()
+\o libil_sh.so:iliLoadPort+867()
+\o libil_sh.so:iliVcodeEval2C+11788()
+\o libil_sh.so:iliVcodeEval2+69()
+\o libil_sh.so:ilxSkillEval2+225()
+\o libil_sh.so:_ilTopLevelSet+159()
+\o libil_sh.so:ilxTopLevelCmd+299()
+\o libil_sh.so:ilLoadCapContext+515()
+\o libil_sh.so:iliInitClients+1499()
+\o virtuoso:main+293()
+\o libc.so.6:__libc_start_main+229()
+\o virtuoso:_start+41()

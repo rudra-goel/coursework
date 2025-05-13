@@ -1,0 +1,67 @@
+
+; this is the vector file simulation for the 16 bit programmable synchronous adder module while changing the supply voltage vdd
+
+tunit ns
+; vih 0.6
+; vih 1.0
+; vih 1.4
+vih 1.8
+
+vil 0.0
+
+; voh 0.54
+; voh 0.9
+; voh 1.26
+voh 1.62
+
+; vol 0.06
+; vol 0.1
+; vol .14
+vol .18
+
+
+trise 0.01
+tfall 0.01
+
+
+vname  CLK  A<[15:12]> A<[11:8]> A<[7:4]> A<[3:0]>  B<[15:12]> B<[11:8]> B<[7:4]> B<[3:0]>  Ctrl
+
+radix 1 4 4 4 4 4 4 4 4 1
+
+;fmax is given by 1/(period*2*10^-9) Hz
+
+; period 1.9		; 0.6 Vdd
+; period .4		; 1.0 Vdd
+; period .35		; 1.4 Vdd  
+period .3		; 1.8 Vdd
+
+;CLK	A4	A3	A2	A1	B4	B3	B2	B1	Ctrl
+1	0	0	0	0	0	0	0	0	0
+0	0	0	0	0	0	0	0	0	0
+1	0	0	0	0	0	0	0	0	0
+0	0	3	D	B	2	A	6	F	0
+1	0	3	D	B	2	A	6	F	0
+0	7	E	5	9	2	A	6	F	1
+1	7	E	5	9	2	A	6	F	1
+0	7	E	5	9	C	4	1	8	1
+1	7	E	5	9	C	4	1	8	1
+0	F	F	F	F	F	F	F	F	0
+1	F	F	F	F	F	F	F	F	0
+0	0	0	0	0	F	F	F	F	1
+1	0	0	0	0	F	F	F	F	1
+0	6	C	0	E	1	F	0	3	0
+1	6	C	0	E	1	F	0	3	0
+0	6	C	0	E	E	C	E	1	0
+1	6	C	0	E	E	C	E	1	0
+0	F	F	F	F	0	0	0	0	1
+1	F	F	F	F	0	0	0	0	1
+0	0	0	0	0	0	0	0	0	1
+1	0	0	0	0	0	0	0	0	1
+0	0	0	0	0	0	0	0	0	0
+1	0	0	0	0	0	0	0	0	0
+0	0	0	0	0	0	0	0	0	0
+1	0	0	0	0	0	0	0	0	0
+0	0	0	0	0	0	0	0	0	0
+1	0	0	0	0	0	0	0	0	0
+0	0	0	0	0	0	0	0	0	0
+

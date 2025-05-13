@@ -1,0 +1,53 @@
+
+; this is the vector file simulation for the 16 bit programmable synchronous adder module
+
+tunit ns
+vih 1.0
+vil 0.0
+voh 0.9
+vol 0.1
+trise 0.01
+tfall 0.01
+
+
+vname  CLK  A<[15:12]> A<[11:8]> A<[7:4]> A<[3:0]>  B<[15:12]> B<[11:8]> B<[7:4]> B<[3:0]>  Ctrl
+
+radix 1 4 4 4 4 4 4 4 4 1
+
+; period .3225		; this is the period of the simulation. Every vector input is a rising edge
+; period .3175
+period .6
+
+
+;CLK	A4	A3	A2	A1	B4	B3	B2	B1	Ctrl
+1	0	0	0	0	0	0	0	0	0
+0	0	0	0	0	0	0	0	0	0
+1	0	0	0	0	0	0	0	0	0
+0	0	3	D	B	2	A	6	F	0
+1	0	3	D	B	2	A	6	F	0
+0	7	E	5	9	2	A	6	F	1
+1	7	E	5	9	2	A	6	F	1
+0	7	E	5	9	C	4	1	8	1
+1	7	E	5	9	C	4	1	8	1
+0	F	F	F	F	F	F	F	F	0
+1	F	F	F	F	F	F	F	F	0
+0	0	0	0	0	F	F	F	F	1
+1	0	0	0	0	F	F	F	F	1
+0	6	C	0	E	1	F	0	3	0
+1	6	C	0	E	1	F	0	3	0
+0	6	C	0	E	E	C	E	1	0
+1	6	C	0	E	E	C	E	1	0
+0	F	F	F	F	0	0	0	0	1
+1	F	F	F	F	0	0	0	0	1
+0	0	0	0	0	0	0	0	0	1
+1	0	0	0	0	0	0	0	0	1
+0	0	0	0	0	0	0	0	0	0
+1	0	0	0	0	0	0	0	0	0
+0	0	0	0	0	0	0	0	0	0
+1	0	0	0	0	0	0	0	0	0
+0	0	0	0	0	0	0	0	0	0
+1	0	0	0	0	0	0	0	0	0
+0	0	0	0	0	0	0	0	0	0
+1	0	0	0	0	0	0	0	0	0
+0	0	0	0	0	0	0	0	0	0
+1	0	0	0	0	0	0	0	0	0

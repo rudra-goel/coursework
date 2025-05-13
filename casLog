@@ -1,0 +1,18 @@
+
+*** Checking layout cellview 'project_3/full_adder_1_bit/layout' against source cellview 'project_3/full_adder_1_bit/schematic'. - Thu Apr 17 00:21:06 2025 ***
+
+INFO (LX-1018): Schematic pin 'A' has no corresponding layout pin.
+INFO (LX-1018): Schematic pin 'B' has no corresponding layout pin.
+INFO (LX-1018): Schematic pin 'C_in' has no corresponding layout pin.
+INFO (LX-1018): Schematic pin 'C_out' has no corresponding layout pin.
+INFO (LX-1018): Schematic pin 'S' has no corresponding layout pin.
+INFO (LX-1027): Schematic global net 'gnd!' has no corresponding layout net.
+INFO (LX-1027): Schematic global net 'vdd!' has no corresponding layout net.
+INFO (LX-1001): Schematic instance 'I0' has no corresponding layout instance.
+INFO (LX-1001): Schematic instance 'I1' has no corresponding layout instance.
+INFO (LX-1001): Schematic instance 'I2' has no corresponding layout instance.
+INFO (LX-1001): Schematic instance 'I3' has no corresponding layout instance.
+INFO (LX-1001): Schematic instance 'I4' has no corresponding layout instance.
+
+*** Check Against Source complete. ***
+

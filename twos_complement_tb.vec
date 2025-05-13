@@ -1,0 +1,33 @@
+
+;this is the testbench for the Twos Complement Module that finds the twos complement for a 16bit input
+;we will be perfoming a vectore simulation for this design
+
+radix	 1 4 4 4 4					; define the radix for each input
+
+vname 	 Ctrl A<[15:12]> A<[11:8]> A<[7:4]> A<[3:0]>	; define the names of the vectors
+
+io	i i i i i				; define all the vectors to be inputs
+
+
+tunit	ns				; specify the unit of time
+
+trise	.01				; 1 ps rise time
+tfall	.01				; 1ps fall time
+
+vih	1.0				; the high voltage of the input
+vol	0.0				; the low voltage of the input
+
+
+voh	0.9				; 90% for rise time delay
+vol 	0.1				; 10% for fall time delay
+
+
+; this following part is the actual vector simulation 
+; t	Ctrl	A4	A3	A2	A1
+0	0	0	0	0	0	; zero vector
+5	0	A	A	A	A	; Every Other bit is high
+10	1	5	5	5	5	; should be exact same as previous
+15	0	5	5	5	5	; New vector
+20	1	A	A	A	A	; should be same as previous line
+
+

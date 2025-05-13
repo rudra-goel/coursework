@@ -1,0 +1,9 @@
+[Logging Service: 8]
+[2025-04-22 01:27:06.577 -0400] [INFO] [cadence.virtuoso.ade.loggingservice] - HistoryRecorderManager init {"dbBasePath": "/nethome/rgoel68/ECE3150/project3/inverter_vth/maestro/results/maestro"}
+[2025-04-22 01:27:06.577 -0400] [INFO] [cadence.virtuoso.ade.loggingservice] - useGRPC grpc service... {"brokerAddress": "ece-linlabsrv01.ece.gatech.edu:42847", "serviceName": "DaVinciService_486488_1745297253", "axlSession": "fnxSession1"}
+[2025-04-22 01:27:06.577 -0400] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service has successfully started. Waiting for incoming messages ... {"hostname": "ece-linlabsrv01.ece.gatech.edu", "processid": 2117311, "logfile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/LoggingService8.log"}
+[2025-04-22 01:27:06.595 -0400] [INFO] [cadence.virtuoso.ade.loggingservice] - logging service gRPC started {"listening address": "ece-linlabsrv01.ece.gatech.edu:46377"}
+[2025-04-22 02:00:20.771 -0400] [INFO] [cadence.virtuoso.ade.loggingservice] - Got exit signal in processControlMessage. Will exit. {}
+[2025-04-22 02:00:21.773 -0400] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Current memory used: 60.8750 MBytes, peak memory used: 62.7500 MBytes {"hostname": "ece-linlabsrv01.ece.gatech.edu", "processid": 2117311, "logfile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/LoggingService8.log"}
+[2025-04-22 02:00:21.773 -0400] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Stopping Logging Service process. {"hostname": "ece-linlabsrv01.ece.gatech.edu", "processid": 2117311, "logfile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/LoggingService8.log"}
+[2025-04-22 02:00:21.773 -0400] [PROCESS] [cadence.virtuoso.ade.loggingservice] - Logging Service stop!!!! {"hostname": "ece-linlabsrv01.ece.gatech.edu", "processid": 2117311, "logfile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/LoggingService8.log"}

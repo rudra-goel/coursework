@@ -1,0 +1,39 @@
+
+;this is the testbench for the 16bit register file designed with d-flip-flops 
+;we will be perfoming a vectore simulation for this design
+
+radix	1 4 4 4 4								; define the radix for each input
+
+vname 	Clk D<[15:12]> D<[11:8]> D<[7:4]> D<[3:0]>				; define the names of the vectors
+
+io	i i i i i								; define all the vectors to be inputs
+
+
+tunit	ns				; specify the unit of time
+
+trise	.01				; 1 ps rise time
+tfall	.01				; 1ps fall time
+
+vih	1.0				; the high voltage of the input
+vol	0.0				; the low voltage of the input
+
+
+voh	0.9				; 90% for rise time delay
+vol 	0.1				; 10% for fall time delay
+
+
+; this following part is the actual vector simulation 
+
+	
+0	0	0	0	0	0
+1	1	0	0	0	0		; first rising edge, op should be low
+2	0	0	0	0	0		; falling edge
+2.5	0	F	F	F	F		; set D input before setup time
+5	1	F	F	F	F		; rising edge, op should be all high
+7.5	1	0	0	0	0		; Q OP SHOULD BE ALL HGIH BSTILL
+10	0	A	A	A	A		; ALL INPIUTS SHOULD STILL BE HIGH
+15	1	A	A	A	A		; RISING EDGE - BITS IN SIGNAL SHOULD BE 101010101... PATTERN
+20	0	5	5	5	5		; BITS SHOULD NOT CHANGE	
+25	1	5	5	5	5		; BITS SHOULD FLIP TO 010101... PATTERN
+
+

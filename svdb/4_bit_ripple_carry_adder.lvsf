@@ -1,0 +1,14 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /nethome/rgoel68/ECE3150
+lvs_LvsfVersion 4
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_SourceCase NO
+lvs_LayoutCase NO
+lvs_PowerName VDD
+lvs_GroundName VSS
+lvs_GroundName GROUND
+lvs_LvsOutFile LVS_REPORT 4_bit_ripple_carry_adder.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST 4_bit_ripple_carry_adder.src.net
+lvs_LvsOutFile RULES_FILE _calibreLVS.rul_
+lvs_LvsRunTimes 1744955355 1744955355

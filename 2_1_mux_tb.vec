@@ -1,0 +1,34 @@
+
+;this is the testbench for the 2 to 1 multiplexer with NAND gate topology
+;we will be perfoming a vectore simulation for this design
+
+radix	1 1 1				; define the radix for each input
+
+vname 	S A B				; define the names of the vectors
+
+io	i i i				; define all the vectors to be inputs
+
+
+tunit	ns				; specify the unit of time
+
+trise	.01				; 1 ps rise time
+tfall	.01				; 1ps fall time
+
+vih	1.0				; the high voltage of the input
+vol	0.0				; the low voltage of the input
+
+
+voh	0.9				; 90% for rise time delay
+vol 	0.1				; 10% for fall time delay
+
+
+; this following part is the actual vector simulation 
+; t	S	A	B
+
+0	0	0	0	; OP should be zero @ time 0-2ns
+2	0	1	0	; F is 1 for 2-4ns
+4	0	0	1	; F is 0 for 4-6ns
+6	1	0	1	; F is 1 for 6-8ns
+8	1	1	0	; F is 0 for rest
+
+

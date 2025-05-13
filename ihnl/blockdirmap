@@ -1,0 +1,8 @@
+CADENCE IHNL11146
+
+project_1 inverter schematic cds0
+project_1 XOR2 schematic cds1
+project_1 NAND2 schematic cds2
+project_3 full_adder_1_bit schematic cds3
+project_3 4_bit_ripple_carry_adder schematic cds4
+project3 16_bit_ripple_carry_adder schematic cds5

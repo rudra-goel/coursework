@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<setupdb version="7">history
+	<active>Active Setup</active>
+	<history>History
+		<historyentry assemblerOrExplorer="explorer" roOrView="view" runningOrFinished="finished">ExplorerRun.0
+			<timestamp>Apr 9 15:44:29 2025</timestamp>
+			<uuid>{ba67998d-09e0-49ba-a9c0-295a343b4774}</uuid>
+			<locked>0</locked>
+			<mode>Single Run, Sweeps and Corners</mode>
+			<resultsname>/nethome/rgoel68/ECE3150/project_3/Ones_complement/maestro/results/maestro/$AXL_HISTORY_NAME.rdb</resultsname>
+			<simresults>/nethome/rgoel68/ECE3150/project_3/Ones_complement/maestro/results/maestro/ExplorerRun.0.rdb</simresults>
+			<runlog>/nethome/rgoel68/ECE3150/project_3/Ones_complement/maestro/results/maestro/$AXL_HISTORY_NAME.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/maestro/$AXL_HISTORY_NAME.log</runlogfile>
+			<psfdir>/nethome/rgoel68/simulation/project_3/Ones_complement/maestro/results/maestro/ExplorerRun.0</psfdir>
+			<simdir>/nethome/rgoel68/simulation/project_3/Ones_complement/maestro/results/maestro/ExplorerRun.0</simdir>
+		</historyentry>
+	</history>
+</setupdb>

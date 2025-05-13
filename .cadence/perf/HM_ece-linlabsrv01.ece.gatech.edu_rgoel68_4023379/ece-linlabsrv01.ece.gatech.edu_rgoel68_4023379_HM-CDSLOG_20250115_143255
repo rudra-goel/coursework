@@ -1,0 +1,148 @@
+\# Program start time:     UTC 2025.01.15 19:32:44.865
+\# Local time: EST (UTC-05:00) 2025.01.15 14:32:44.865
+\o Program:		@(#)$CDS: Virtuoso Studio version IC23.1-64b 07/09/2024 22:36 (cpgbld15) $
+\o Hierarchy:		/tools/software/cadence/ic/23.10.080/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC23.1-64b.ISR8.40  (64-bit addresses)
+\# Command line:	/tools/software/cadence/ic/latest/tools/dfII/bin/64bit/virtuoso
+\# Host name (type):	ece-linlabsrv01.ece.gatech.edu (x86_64)
+\# Operating system:	Linux 4.18.0-553.33.1.el8_10.x86_64 #1 SMP Fri Dec 6 15:07:20 EST 2024
+\# Linux /etc/issue:	****************************************************************************
+\# Linux /etc/issue:	This computer system is the property of the Georgia Institute of Technology.
+\# Linux /etc/issue:	Any user of this system must comply with all Institute and Board of Regents
+\# Linux /etc/issue:	policies, including the Acceptable Use Policy, Cyber Security Policy and
+\# X display name (WxH):	ece-linlabsrv01.ece.gatech.edu:125 (1800x1046)
+\# Available geometry:			TL(0:44) BR(1799:1089)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0xe00000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        739 MB
+\# Available memory:	    237,163 MB
+\# System memory:	    256,871 MB
+\# Maximum memory size:	    256,307 MB
+\# Max mem available:	    237,338 MB
+\# Initial memory used:	        175 MB
+\#        process size:	      1,703 MB
+\# Thread usage limits (effective/default):	maxthreads 764801/764801 maxload 112.00/112.00
+\# Qt version:		5.15.9
+\# Window Manager:	other
+\# User Name:		rgoel68
+\o Working Directory:	ece-linlabsrv01.ece.gatech.edu:/nethome/rgoel68/ECE3150
+\# Process Id:		4023379
+\o 
+\o COPYRIGHT (C) 1992-2024  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2024  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o INFO (CMGR-2107): The following Constraint Manager configuration files have been combined together (in decreasing order of precedence, specified by your search path - setup.loc) 
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/ci/config.xml
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/ci/config.xml
+\o INFO (CMGR-2107): The following Constraint Manager configuration files have been combined together (in decreasing order of precedence, specified by your search path - setup.loc) 
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/caa/config.xml
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/caa/config.xml
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading im.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading drv.cxt 
+\o Loading ams.cxt 
+\o Loading adexlDM.cxt 
+\o function _teExpandCallbacks redefined
+\o function _teGetCallback redefined
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o Loading sipLayout.cxt 
+\o function _pcIdeSingleSelectPt redefined
+\o Loading diagCenter.cxt 
+\o INFO (ELI-00333) License program mode is Virtuoso.
+\# [14:32:44.142228] Configured Lic search path (23.02-s006): 5280@ece-winlic.ece.gatech.edu:1910@ece-winlic.ece.gatech.edu:27020@ece-winlabsvcs.ece.gatech.edu:1055@ansyslic.ecs.gatech.edu
+\o Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.02s.
+\# Memory report: using         298 MB, process size 1,893 MB at UTC 2025.01.15 19:32:48.135
+\o //
+\o //  Calibre Skill Interface * (v2024.4_12.9) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o loading vars from /tools/designkits/NCSU/FreePDK4514/ncsu_basekit/cdssetup/cdsenv for tool layout
+\o ---------------------------------------------------------------------------
+\o Welcome to the FreePDK 45nm Free, Open-Source Process Design Kit
+\o 
+\o This initiative is brought to you by the Semiconductor Research
+\o Corporation (SRC), the National Science Foundation (NSF), Silicon
+\o Integration Initiative (Si2), Mentor Graphics, and Synopsys.
+\o 
+\o This version of the kit was created by Rhett Davis, Paul Franzon,
+\o Michael Bucher, Sunil Basavarajaiah, and Harun Demircioglu
+\o of North Carolina State University, and James Stine and Ivan Castellanos
+\o of Oklahoma State University.
+\o 
+\o Contributions and modifications to this kit are welcomed and encouraged.
+\o 
+\o Copyright 2007 - W. Rhett Davis, Paul Franzon, Michael Bucher,
+\o                  and Sunil Basavarajaiah, North Carolina State University
+\o Copyright 2008 - W. Rhett Davis, Michael Bucher, and Sunil Basavarajaiah,
+\o                  North Carolina State University (ncsu_basekit subtree)
+\o                  James Stine, and Ivan Castellanos,
+\o                  and Oklahoma State University (osu_soc subtree)
+\o Copyright 2011 - W. Rhett Davis, and Harun Demircioglu,
+\o                  North Carolina State University
+\o 
+\o Licensed under the Apache License, Version 2.0 (the "License");
+\o you may not use this file except in compliance with the License.
+\o You may obtain a copy of the License at
+\o 
+\o     http://www.apache.org/licenses/LICENSE-2.0
+\o 
+\o Unless required by applicable law or agreed to in writing, software
+\o distributed under the License is distributed on an "AS IS" BASIS,
+\o WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+\o See the License for the specific language governing permissions and
+\o limitations under the License.
+\o ---------------------------------------------------------------------------
+\o 
+\o Done loading FreePDK customizations.
+\p > 
+\o Loading le.cxt 
+\o Loading tilp.cxt 
+\o Loading validator.cxt 
+\o Loading vrf.cxt 
+\o Loading multiTechPlugin.cxt 
+\o Loading exportDie.cxt 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\o The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 4023379' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\a hiResizeWindow(window(1) list(184:-123 1984:895))
+\r t
+\a hiResizeWindow(window(1) list(184:-44 1984:974))
+\# [14:32:54.490129] Periodic Lic check successful
+\# [14:32:54.490186] Feature usage summary:
+\# [14:32:54.490187] 111
+\# [14:32:54.490187] Virtuoso_Adv_Node_Framework
+\r t

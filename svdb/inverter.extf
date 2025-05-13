@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1741237919 1741237919
+lvs_ExtOutFile RUNDIR /nethome/rgoel68/ECE3150
+lvs_ExtOutFile RULES_FILE _calibreLVS.rul_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST inverter.sp
+lvs_ExtOutFile EXTRACTION_REPORT inverter.lvs.report.ext

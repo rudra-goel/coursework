@@ -1,0 +1,14 @@
+{
+    "PLEASE DON'T EDIT OR PARSE": "This is automatically generated file for extracting in QS",
+    "CREATION TIME": "Fri Apr 18 03:43:41 2025",
+    "VERSION": "1",
+    "LVS REPORT OPTION": [
+        "N"
+    ],
+    "LVS CORRECT CELLS": [
+        [
+            "16_bit_ripple_carry_adder",
+            "16_bit_ripple_carry_adder"
+        ]
+    ]
+}

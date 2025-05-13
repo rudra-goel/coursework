@@ -1,0 +1,28 @@
+//
+//  Rule file generated on Fri Apr 18 03:43:35 2025
+//  by Calibre Interactive v2024.4_12.9    Tue Oct 1 20:34:14 PDT 2024
+//
+//      *** PLEASE DO NOT MODIFY THIS FILE ***
+//
+//
+
+LAYOUT PATH "16_bit_ripple_carry_adder.calibre.db"
+LAYOUT SYSTEM GDSII
+LAYOUT PRIMARY "16_bit_ripple_carry_adder"
+
+SOURCE PATH "16_bit_ripple_carry_adder.src.net"
+SOURCE SYSTEM SPICE
+SOURCE PRIMARY "16_bit_ripple_carry_adder"
+
+MASK SVDB DIRECTORY "svdb" QUERY
+
+LVS REPORT "16_bit_ripple_carry_adder.lvs.report"
+
+LVS EXECUTE ERC YES
+
+ERC RESULTS DATABASE "16_bit_ripple_carry_adder.erc.results"
+ERC CELL NAME YES CELL SPACE XFORM
+
+DRC ICSTATION YES
+
+INCLUDE "/nethome/rgoel68/ECE3150/ECE3150_Cadence/ECE3150_Cadence/FreePDK45/ncsu_basekit/techfile/calibre/calibreLVS.rul"

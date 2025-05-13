@@ -1,0 +1,6 @@
+source /tools/designkits/NCSU/FreePDK4514/ncsu_basekit/cdssetup/icoa_setup.csh
+source /tools/software/cadence/ic/cshrc.latest
+source /tools/software/siemens/calibre/cshrc.latest
+setenv CDS_Netlisting_Mode Analog
+virtuoso &
+

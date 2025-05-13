@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/16_bit_ripple_carry_adder.dv
+dv_start matched                                  
+dv_cell {16_bit_ripple_carry_adder} {16_bit_ripple_carry_adder} matched
+dv_obj_count -transformed_nets {115 115} -transformed_inst {80 80} -transformed_port {52 52}
+dv_end

@@ -1,0 +1,379 @@
+\# Program start time:     UTC 2025.04.22 04:47:38.806
+\# Local time: EDT (UTC-04:00) 2025.04.22 00:47:38.806
+\o Program:		@(#)$CDS: Virtuoso Studio version IC23.1-64b 01/14/2025 22:42 (cpgbld16) $
+\o Hierarchy:		/tools/software/cadence/ic/23.10.120/tools.lnx86/dfII/
+\o Sub version:		sub-version  IC23.1-64b.ISR12.37  (64-bit addresses)
+\# Command line:	/tools/software/cadence/ic/latest/tools.lnx86/dfII/bin/64bit/virtuoso -beanhost ece-linlabsrv01.ece.gatech.edu -beanport 11854 -beanbinlog  -beanLogFile /nethome/rgoel68/ECE3150/logs_rgoel68/logs0/amps_Service1.log -mpssession virtuoso486488 -mpshost ece-linlabsrv01.ece.gatech.edu -davinciService DaVinciService_486488_1745297253 -scopedPid 486488 -axlSession fnxSession0 -axlServiceIdFlag 1 -uuid 86fda7af-246b-4e3f-866d-573360e8284c -heartbeat /dev/shm/swift-heartbeat.vGgpoaLkGQ -log /nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log -adeBrokerAddress ece-linlabsrv01.ece.gatech.edu:42847 -noautostart -nographE -lscs 000175E1894CBE06FF0966E38F1FFC06BC4D65B0C578C406D07B6FA78410926AD02470F28B50992BD92E69ED90048F74DD2F32AE9C019928D92E0EE49078E361D44A00001DAD -interactive -offlineExprEval -upfrontMode -fenixMode explorer -heartbeatTimeout  -lingerTimeout 300 -pointlifetime -1
+\# Host name (type):	ece-linlabsrv01.ece.gatech.edu (x86_64)
+\# Operating system:	Linux 4.18.0-553.44.1.el8_10.x86_64 #1 SMP Wed Mar 5 10:48:41 EST 2025
+\# Linux /etc/issue:	****************************************************************************
+\# Linux /etc/issue:	This computer system is the property of the Georgia Institute of Technology.
+\# Linux /etc/issue:	Any user of this system must comply with all Institute and Board of Regents
+\# Linux /etc/issue:	policies, including the Acceptable Use Policy, Cyber Security Policy and
+\# X display name (WxH):	:5729 (1024x868)
+\# Available geometry:			TL(0:0) BR(1023:867)
+\# X server:			The X.Org Foundation
+\# Depth of Visual (Root):	24 (24)
+\# Number of Planes Used:	24
+\# X version:		11.0 (vendor release 12011000)
+\# X resource pool:	base 0x400000, mask 0x1fffff (2097151), shift 0
+\# 			current id 0x0, current max 0x1ffffa (2097146)
+\# Max data seg size:	     unlimited
+\# Max process size:	     unlimited
+\# Initial sbrk value:	        762 MB
+\# Available memory:	    164,103 MB
+\# System memory:	    256,871 MB
+\# Maximum memory size:	    256,287 MB
+\# Max mem available:	    164,281 MB
+\# Initial memory used:	        178 MB
+\#        process size:	      1,713 MB
+\# Thread usage limits (effective/default):	maxthreads 764799/764799 maxload 112.00/112.00
+\# Qt version:		5.15.9
+\# Window Manager:	other
+\# User Name:		rgoel68
+\o Working Directory:	ece-linlabsrv01.ece.gatech.edu:/nethome/rgoel68/ECE3150
+\# Process Id:		510486
+\o 
+\o COPYRIGHT (C) 1992-2025  CADENCE DESIGN SYSTEMS INC.  ALL RIGHTS RESERVED.
+\o           (C) 1992-2025  UNIX SYSTEMS Laboratories INC.,
+\o                          Reproduced with permission.
+\o 
+\o This Cadence Design Systems program and online documentation are
+\o proprietary/confidential information and may be disclosed/used only
+\o as authorized in a license agreement controlling such use and disclosure.
+\o 
+\o           RESTRICTED RIGHTS NOTICE (SHORT FORM)
+\o Use/reproduction/disclosure is subject to restriction
+\o set forth at FAR 1252.227-19 or its equivalent.
+\o INFO (CMGR-2107): The following Constraint Manager configuration files have been combined together (in decreasing order of precedence, specified by your search path - setup.loc) 
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/ci/config.xml
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/ci/config.xml
+\o INFO (CMGR-2107): The following Constraint Manager configuration files have been combined together (in decreasing order of precedence, specified by your search path - setup.loc) 
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/caa/config.xml
+\o /tools/software/cadence/ic/latest/share/cdssetup/dfII/caa/config.xml
+\o Loading geView.cxt 
+\o Loading menuBuilder.cxt 
+\o Loading im.cxt 
+\o Loading schView.cxt 
+\o Loading selectSv.cxt 
+\o Loading pegasusui.cxt
+\o Loading wireEdit.cxt 
+\o Loading pte2.cxt 
+\o Loading xlUI.cxt 
+\o Loading auCore.cxt 
+\o Loading vhdl.cxt 
+\o Loading seismic.cxt 
+\o Loading ci.cxt 
+\o Loading layers.cxt 
+\o Loading drv.cxt 
+\o Loading ams.cxt 
+\o Loading oasis.cxt 
+\o Loading dal.cxt 
+\o Loading awv.cxt 
+\o Loading socket.cxt 
+\o Loading analog.cxt 
+\o Loading par.cxt 
+\o Loading asimenv.cxt 
+\# Memory report: using         294 MB, process size 1,832 MB at UTC 2025.04.22 04:47:41.008
+\o Loading alvs.cxt 
+\o Loading caa.cxt 
+\o Loading amps.cxt 
+\o Loading adexlCore.cxt 
+\o Loading adexl.cxt 
+\o *Info*    Exporting services from client ... 
+\o 
+\o Loading adexlDM.cxt 
+\o function _teExpandCallbacks redefined
+\o function _teGetCallback redefined
+\o Loading cpf.cxt 
+\o Loading cli.cxt 
+\o Loading lp.cxt 
+\o Loading sipLayout.cxt 
+\o function _pcIdeSingleSelectPt redefined
+\o Loading viva.cxt 
+\o Loading diagCenter.cxt 
+\o INFO (ELI-00333) License program mode is LSCS.
+\# [00:47:38.142260] Configured Lic search path (23.02-s006): 5280@ece-winlic.ece.gatech.edu:1910@ece-winlic.ece.gatech.edu:27020@ece-winlabsvcs.ece.gatech.edu:1055@ansyslic.ecs.gatech.edu
+\o INFO (ELI-00302) Connecting to parent process (session=virtuoso486488, host=ece-linlabsrv01.ece.gatech.edu). Connection mode is LSCS. Total timeout is 180 seconds. Connection timeout is 90 seconds.
+\o INFO (ELI-00303) Step 1: Connecting to parent. Time spent is 0 seconds.
+\o INFO (ELI-00304) The registration of the child 510486 within 90 seconds is being processed...
+\o INFO (ELI-00305) The result of registration is true. Time spent is 0 seconds.
+\o INFO (ELI-00308) The connection has ended. Result is true. Total time spent is 0 seconds.
+\o //
+\o //  Calibre Skill Interface * (v2024.4_12.9) *
+\o //
+\o //                         Copyright Siemens 1996-2020     
+\o //                             All Rights Reserved.
+\o //         THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+\o //            WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION
+\o //              OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+\o //
+\o //
+\o loading vars from /tools/designkits/NCSU/FreePDK4514/ncsu_basekit/cdssetup/cdsenv for tool layout
+\o ---------------------------------------------------------------------------
+\o Welcome to the FreePDK 45nm Free, Open-Source Process Design Kit
+\o 
+\o This initiative is brought to you by the Semiconductor Research
+\o Corporation (SRC), the National Science Foundation (NSF), Silicon
+\o Integration Initiative (Si2), Mentor Graphics, and Synopsys.
+\o 
+\o This version of the kit was created by Rhett Davis, Paul Franzon,
+\o Michael Bucher, Sunil Basavarajaiah, and Harun Demircioglu
+\o of North Carolina State University, and James Stine and Ivan Castellanos
+\o of Oklahoma State University.
+\o 
+\o Contributions and modifications to this kit are welcomed and encouraged.
+\o 
+\o Copyright 2007 - W. Rhett Davis, Paul Franzon, Michael Bucher,
+\o                  and Sunil Basavarajaiah, North Carolina State University
+\o Copyright 2008 - W. Rhett Davis, Michael Bucher, and Sunil Basavarajaiah,
+\o                  North Carolina State University (ncsu_basekit subtree)
+\o                  James Stine, and Ivan Castellanos,
+\o                  and Oklahoma State University (osu_soc subtree)
+\o Copyright 2011 - W. Rhett Davis, and Harun Demircioglu,
+\o                  North Carolina State University
+\o 
+\o Licensed under the Apache License, Version 2.0 (the "License");
+\o you may not use this file except in compliance with the License.
+\o You may obtain a copy of the License at
+\o 
+\o     http://www.apache.org/licenses/LICENSE-2.0
+\o 
+\o Unless required by applicable law or agreed to in writing, software
+\o distributed under the License is distributed on an "AS IS" BASIS,
+\o WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+\o See the License for the specific language governing permissions and
+\o limitations under the License.
+\o ---------------------------------------------------------------------------
+\o 
+\o Done loading FreePDK customizations.
+\p > 
+\o Loading le.cxt 
+\o Loading tilp.cxt 
+\o Loading validator.cxt 
+\o Loading vrf.cxt 
+\o Loading multiTechPlugin.cxt 
+\o Loading exportDie.cxt 
+\# Loading perfDiag...
+\# (PerfDiag): Set GDB path to environment variable 'gdbPath' (gdb).
+\# The Health Monitor tool is installed. You can access it from CIW - Tools - Diagnostic Center or use the shell command 'cdsPerfDiag -p 510486' to open it when Virtuoso freezes.
+\# (PerfDiag): Use backtrace from GLIBC.
+\i _axlRunServices()
+\o Loading simui.cxt 
+\o [2025-04-22 00:47:45.988 -0400] [PROCESS] [cadence.virtuoso.ade.services] - Netlist Service has successfully started. Waiting for incoming messages ... {"jobid": "1", "hostname": "ece-linlabsrv01.ece.gatech.edu", "processid": 510486, "logfile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log"}
+\# Memory report: using         445 MB, process size 2,412 MB at UTC 2025.04.22 04:47:48.034
+\o [2025-04-22 00:47:48.034 -0400] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"jobid": "1", "history": "ExplorerRun.0", "point": 0, "testname": "project_1_inverter_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log", "logFileSize": "8660", "category": "point-netlist"}
+\# Available memory:        164,099 MB at UTC 2025.04.22 04:47:49.111
+\# Memory report: Maximum memory size now 164,545 MB at UTC 2025.04.22 04:47:49.111
+\# Thread usage report: 43 active threads, active load 1.40 at UTC 2025.04.22 04:47:49.111
+\# Unzipping history /nethome/rgoel68/ECE3150/project_1/inverter/maestro/history/ExplorerRun.0.zip::historyData.sdb
+\o Loading vqp.cxt 
+\o Loading vdsil.cxt 
+\o *Warning* AXL Context Manager : job 1 is already registered. 
+\o 
+\o Loading hdlPkg.cxt 
+\o 
+\o 
+\o *Info*    Configuring the session ...
+\o 
+\o 	Library      = project_1
+\o 	Cell         = inverter
+\o 	View         = schematic
+\o 	Simulator    = spectre
+\o 	State Path   = $AXL_SETUPDB_DIR/test_states
+\o 	State Name   = ExplorerRun.0
+\o 	Results DB   = /nethome/rgoel68/ECE3150/project_1/inverter/maestro/results/maestro/ExplorerRun.0.rdb
+\o 	Results Dir  = /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/1/project_1_inverter_1
+\o 	Results Loc  = /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro
+\o 	Project Dir  = /nethome/rgoel68/simulation
+\o 	Setup DB loc = /nethome/rgoel68/ECE3150/project_1/inverter/maestro
+\o 	File Encoding = 0
+\o 
+\o 
+\o Loading spectrei.cxt 
+\o Loading devCheck.cxt 
+\o Loading relXpert.cxt 
+\o Loading hspiceD.cxt 
+\o Loading spectreinl.cxt 
+\o Loading msgHandler.cxt 
+\o Loading UltraSim.cxt 
+\o Loading AMSOSS.cxt 
+\o Loading AMS.cxt 
+\# Unzipping history /nethome/rgoel68/ECE3150/project_1/inverter/maestro/history/ExplorerRun.0.zip::historyData.sdb
+\o 
+\o *Info*    The auto suspension is disabled.
+\o 
+\o Loading elec.cxt 
+\o [2025-04-22 00:47:51.199 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Setting dspf2adeEnabled on oasis_session in _axlRunTestNetlister {"jobid": "1", "history": "ExplorerRun.0", "point": 0, "testname": "project_1_inverter_1", "isDspf2ADEEnabled": false}
+\o [2025-04-22 00:47:51.199 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Started preparing netlist {"jobid": "1", "history": "ExplorerRun.0", "point": 0, "testname": "project_1_inverter_1", "testnameKey": "project_1_inverter_1", "event": "start", "category": "design-netlist"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Ln = "50n"
+\o Setting var Lp = "50n"
+\o Setting var Wn = "90n"
+\o Setting var Wp = "100n : 100n: 500n"
+\o Loading monte.cxt 
+\o Reusing AHDL Data dir
+\o 
+\o *Info*    Data Directory    =
+\o           /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/psf/project_1_inverter_1
+\o 
+\o generate netlist...
+\o Loading hnlInit.cxt 
+\o Loading seCore.cxt 
+\# [00:47:51.296424] Periodic Lic check successful
+\# [00:47:51.296426] Feature usage summary:
+\o Initializing the control file using cp:
+\o     cp /tools/software/cadence/ic/23.10.120/tools.lnx86/dfII/etc/si/control.spectre /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/psf/project_1_inverter_1/netlist/control
+\o Copying Spectre source file 'spectre.inp'
+\o Copying Spectre command file 'spectre.sim'
+\o Begin Incremental Netlisting Apr 22 00:47:51 2025
+\o Loading json.cxt 
+\o End netlisting Apr 22 00:47:51 2025
+\o 
+\o Netlisting Statistics:
+\o 	Number of components:    2
+\o 
+\o 	Elapsed time:          0.0s
+\o Errors: 0	Warnings: 0
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\# Memory report: using         553 MB, process size 2,522 MB at UTC 2025.04.22 04:47:52.485
+\o [2025-04-22 00:47:52.486 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished preparing netlist {"jobid": "1", "history": "ExplorerRun.0", "point": 0, "testname": "project_1_inverter_1", "testnameKey": "project_1_inverter_1", "event": "finish", "category": "design-netlist"}
+\o [2025-04-22 00:47:54.538 -0400] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"jobid": "1", "history": "ExplorerRun.0", "point": 1, "testname": "project_1_inverter_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log", "logFileSize": "11050", "category": "point-netlist"}
+\o [2025-04-22 00:47:54.538 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"jobid": "1", "history": "ExplorerRun.0", "point": 1, "testname": "project_1_inverter_1", "event": "start", "category": "point-netlist"}
+\o [2025-04-22 00:47:54.562 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Reading the results database to access variable values for the preparation of quick plot data. If you do not want to save quick plot data, set the quickPlotGlobalWriteDisable environment variable to t. {"jobid": "1", "history": "ExplorerRun.0", "point": 1, "testname": "project_1_inverter_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Ln = "50n"
+\o Setting var Lp = "50n"
+\o Setting var Wn = "90n"
+\o Setting var Wp = "100n"
+\o Setting var temperature = "27"
+\o Setting temp(T) = 27
+\o 
+\o *Info*    Netlist Directory =
+\o           /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/1/project_1_inverter_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/1/project_1_inverter_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2025-04-22 00:47:56.903 -0400] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 913.8164 MBytes, peak memory used: 913.8164 MBytes {"jobid": "1", "hostname": "ece-linlabsrv01.ece.gatech.edu", "processid": 510486, "history": "ExplorerRun.0", "testname": "project_1_inverter_1", "point": 1, "logfile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log"}
+\o [2025-04-22 00:47:56.905 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"jobid": "1", "history": "ExplorerRun.0", "point": 1, "testname": "project_1_inverter_1", "event": "finish", "category": "point-netlist"}
+\o [2025-04-22 00:47:57.909 -0400] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"jobid": "1", "history": "ExplorerRun.0", "point": 2, "testname": "project_1_inverter_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log", "logFileSize": "15749", "category": "point-netlist"}
+\o [2025-04-22 00:47:57.910 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"jobid": "1", "history": "ExplorerRun.0", "point": 2, "testname": "project_1_inverter_1", "event": "start", "category": "point-netlist"}
+\o [2025-04-22 00:47:57.937 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Reading the results database to access variable values for the preparation of quick plot data. If you do not want to save quick plot data, set the quickPlotGlobalWriteDisable environment variable to t. {"jobid": "1", "history": "ExplorerRun.0", "point": 2, "testname": "project_1_inverter_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Wp = "200n"
+\o 
+\o *Info*    Netlist Directory =
+\o           /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/2/project_1_inverter_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/2/project_1_inverter_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2025-04-22 00:47:59.451 -0400] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 915.8164 MBytes, peak memory used: 915.8164 MBytes {"jobid": "1", "hostname": "ece-linlabsrv01.ece.gatech.edu", "processid": 510486, "history": "ExplorerRun.0", "testname": "project_1_inverter_1", "point": 2, "logfile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log"}
+\o [2025-04-22 00:47:59.452 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"jobid": "1", "history": "ExplorerRun.0", "point": 2, "testname": "project_1_inverter_1", "event": "finish", "category": "point-netlist"}
+\o [2025-04-22 00:48:00.457 -0400] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"jobid": "1", "history": "ExplorerRun.0", "point": 3, "testname": "project_1_inverter_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log", "logFileSize": "18053", "category": "point-netlist"}
+\o [2025-04-22 00:48:00.457 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"jobid": "1", "history": "ExplorerRun.0", "point": 3, "testname": "project_1_inverter_1", "event": "start", "category": "point-netlist"}
+\o [2025-04-22 00:48:00.480 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Reading the results database to access variable values for the preparation of quick plot data. If you do not want to save quick plot data, set the quickPlotGlobalWriteDisable environment variable to t. {"jobid": "1", "history": "ExplorerRun.0", "point": 3, "testname": "project_1_inverter_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Wp = "300n"
+\o 
+\o *Info*    Netlist Directory =
+\o           /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/3/project_1_inverter_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/3/project_1_inverter_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2025-04-22 00:48:01.754 -0400] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 915.8164 MBytes, peak memory used: 915.8164 MBytes {"jobid": "1", "hostname": "ece-linlabsrv01.ece.gatech.edu", "processid": 510486, "history": "ExplorerRun.0", "testname": "project_1_inverter_1", "point": 3, "logfile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log"}
+\o [2025-04-22 00:48:01.755 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"jobid": "1", "history": "ExplorerRun.0", "point": 3, "testname": "project_1_inverter_1", "event": "finish", "category": "point-netlist"}
+\o [2025-04-22 00:48:02.759 -0400] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"jobid": "1", "history": "ExplorerRun.0", "point": 4, "testname": "project_1_inverter_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log", "logFileSize": "20357", "category": "point-netlist"}
+\o [2025-04-22 00:48:02.759 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"jobid": "1", "history": "ExplorerRun.0", "point": 4, "testname": "project_1_inverter_1", "event": "start", "category": "point-netlist"}
+\o [2025-04-22 00:48:02.782 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Reading the results database to access variable values for the preparation of quick plot data. If you do not want to save quick plot data, set the quickPlotGlobalWriteDisable environment variable to t. {"jobid": "1", "history": "ExplorerRun.0", "point": 4, "testname": "project_1_inverter_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Wp = "400n"
+\o 
+\o *Info*    Netlist Directory =
+\o           /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/4/project_1_inverter_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/4/project_1_inverter_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2025-04-22 00:48:04.461 -0400] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 917.9375 MBytes, peak memory used: 917.9375 MBytes {"jobid": "1", "hostname": "ece-linlabsrv01.ece.gatech.edu", "processid": 510486, "history": "ExplorerRun.0", "testname": "project_1_inverter_1", "point": 4, "logfile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log"}
+\o [2025-04-22 00:48:04.462 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"jobid": "1", "history": "ExplorerRun.0", "point": 4, "testname": "project_1_inverter_1", "event": "finish", "category": "point-netlist"}
+\o [2025-04-22 00:48:05.467 -0400] [EVENT] [cadence.virtuoso.ade.services.netlister] - NewPoint {"jobid": "1", "history": "ExplorerRun.0", "point": 5, "testname": "project_1_inverter_1", "event": "NewPoint", "EventSource": "Netlist Service", "HistoryName": "ExplorerRun.0", "logFile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log", "logFileSize": "22661", "category": "point-netlist"}
+\o [2025-04-22 00:48:05.468 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Started netlisting {"jobid": "1", "history": "ExplorerRun.0", "point": 5, "testname": "project_1_inverter_1", "event": "start", "category": "point-netlist"}
+\o [2025-04-22 00:48:05.493 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Reading the results database to access variable values for the preparation of quick plot data. If you do not want to save quick plot data, set the quickPlotGlobalWriteDisable environment variable to t. {"jobid": "1", "history": "ExplorerRun.0", "point": 5, "testname": "project_1_inverter_1"}
+\o Resetting statistical vars
+\o 
+\o *Info*    Setting parameter values ...
+\o 
+\o Setting var Wp = "500n"
+\o 
+\o *Info*    Netlist Directory =
+\o           /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/5/project_1_inverter_1/netlist
+\o 
+\o 
+\o *Info*    Data Directory    =
+\o           /nethome/rgoel68/simulation/project_1/inverter/maestro/results/maestro/ExplorerRun.0/5/project_1_inverter_1
+\o 
+\o Reusing AHDL Data dir
+\o generate netlist...
+\o Ignoring netlist creation since ignoreDesignChangesDuringRun is set to true
+\o       ...successful.
+\o compose simulator input file...
+\o       ...successful.
+\o [2025-04-22 00:48:06.803 -0400] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Current memory used: 917.9570 MBytes, peak memory used: 917.9570 MBytes {"jobid": "1", "hostname": "ece-linlabsrv01.ece.gatech.edu", "processid": 510486, "history": "ExplorerRun.0", "testname": "project_1_inverter_1", "point": 5, "logfile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log"}
+\o [2025-04-22 00:48:06.804 -0400] [INFO] [cadence.virtuoso.ade.services.netlister] - Finished netlisting {"jobid": "1", "history": "ExplorerRun.0", "point": 5, "testname": "project_1_inverter_1", "event": "finish", "category": "point-netlist"}
+\o [2025-04-22 00:53:08.589 -0400] [PROCESS] [cadence.virtuoso.ade.services.netlister] - Netlist Service process exits. {"jobid": "1", "hostname": "ece-linlabsrv01.ece.gatech.edu", "processid": 510486, "history": "ExplorerRun.0", "logfile": "/nethome/rgoel68/ECE3150/logs_rgoel68/logs0/Service1.log"}
+\o Simulation design variables differ from those on the cellView,
+\o they have been saved in the file "/tmp/saved-design-variables2".
+\o To save future changes, copy variables to cellView before exiting.
+\# Lic Summary:
+\# [00:53:09.103274] Cdslmd servers:5280@ece-winlic.ece.gatech.edu:1910@ece-winlic.ece.gatech.edu:27020@ece-winlabsvcs.ece.gatech.edu:1055@ansyslic.ecs.gatech.edu
+\# [00:53:09.627585] Feature usage summary:
+\# Memory report: on exit            557 MB, process size 2,526 MB at UTC 2025.04.22 04:53:09.627
+\# Memory report: peak usage         565 MB, process size 2,534 MB

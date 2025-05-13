@@ -1,0 +1,35 @@
+; this is the vector file simulation for characterizing the d flip flop
+; we will be minimizing the setup and hold times of the D input until failure
+
+radix   1 1                                                               ; define the radix for each input
+
+vname   Clk D                              ; define the names of the vectors
+
+io      i i                                                              ; define all the vectors to be inputs
+
+tunit   ns                              ; specify the unit of time
+
+trise   .01                             ; 1 ps rise time
+tfall   .01                             ; 1ps fall time
+
+vih     1.0                             ; the high voltage of the input
+vil     0.0                             ; the low voltage of the input
+
+voh     0.9                             ; 90% for rise time delay
+vol     0.1                             ; 10% for fall time delay
+
+
+; time    Clk     D
+0         0       0
+5         1       0
+10        0       0
+
+; Start setup time sweep pattern
+14.995   0	      1
+15	1	1
+17.5 1  0
+20	0	0
+25	1	0
+30	0	0
+
+

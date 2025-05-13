@@ -1,0 +1,151 @@
+=======================================================================
+[Copyright 2002-2025] Cadence Design Systems, Inc. All rights reserved.
+
+This  program and online  documentation  may not be copied, modified,
+re-published, uploaded,  executed, or  distributed in any way, in any
+medium, whether in whole or in part, without prior written permission
+from Cadence Design Systems, Inc.
+=======================================================================
+
+
+============== checkSysConf:  Version 3.62 ====================
+
+
+Date information gathered: Wed Apr  9 12:17:42 EDT 2025
+-------------------------------------------------------
+Host Name ..............:  ece-linlabsrv01.ece.gatech.edu
+Hostid .................:  cf821be8
+Operating System .......:  Linux / x86_64
+OS Version .............:  Red Hat Enterprise Linux release 8.10 (Ootpa)
+Kernel Version .........:  4.18.0-553.44.1.el8_10.x86_64
+Hardware Type ..........:  x86_64
+Memory .................:  191335 Megabyte
+CPU model ..............:  Intel(R) Xeon(R) Gold 5117 CPU @ 2.00GHz
+No. of CPUs ............:  112
+Total Swap Space........:  65536 Megabyte
+Local X Server .........:  
+Patch Data file ........:  /tools/software/cadence/ic/23.10.120/share/patchData/Linux/x86_64/redhat/8.0WS/IC23.1
+
+
+****************   Now verifying configuration     ****************
+
+
+Validating Kernel requirements...
+            Minimum             Installed                   Status    Info                
+            --------------      --------------------------  ------    --------------------
+            4.18.0-147          4.18.0-553.44.1.el8_10.x86_64PASS                          
+
+
+Validating MEMORY requirements MegaByte ...
+            Minimum   Installed Status  Info                
+            -------   --------- ------  --------------------
+            4096MB    191335MB  PASS                        
+
+
+Validating SWAP requirements in MegaByte ...
+            Minimum   Installed Status  Info                
+            -------   --------- ------  --------------------
+            4096MB    65536MB   PASS                        
+
+
+Validating OS version requirement...
+            Minimum     Installed   Status    Info
+            ----------  ----------  ------    ----------------------------
+            8.1         8.10        PASS      
+
+
+Validating DISPLAY requirements...
+          Minimum           Installed                   Status  Info                
+          ----------------- ---------------------       ------  ----                
+          8 planes          32 planes                   PASS                        
+          PseudoColor       DirectColor                                             
+
+
+Validating XKEYBOARD extension requirement...
+          Requirement  Installed   Status     Info
+          -----------  ---------   ------     ---------------------------
+          Required     Yes         PASS       
+
+
+Validating PACKAGE requirements.....32 to check
+#   PACKAGE                Release    Build          Installed               Arch        Status  Info               
+--  -------                -------    -----          ----------              ----        ------  --------------------
+1   glibc                  2.28       72.el8_1.1     2.28-251.el8_10.14      x86_64      PASS                       
+->  'glibc'
+2   elfutils-libelf        0.176      5.el8          0.190-2.el8             x86_64      PASS                       
+->  'libelf.so.1'
+3   ksh                    20120801   253.el8_1      20120801-267.el8        x86_64      PASS                       
+->  'ksh'
+4   redhat-lsb-core        4.1        47.el8         4.1-47.el8              x86_64      PASS                       
+->  'lsb_release command'
+5   xterm                  331        1.el8          331-2.el8               x86_64      PASS                       
+->  'xterm command'
+6   mesa-libGL             19.1.4     3.el8_1        23.1.4-4.el8_10         x86_64      PASS                       
+->  'libGL.so.1'
+7   libglvnd-glx           1.0.1      0.9.git5baa1e5.el81.3.4-2.el8             x86_64      PASS                       
+->  'libGL.so.1'
+8   mesa-libGLU            9.0.0      15.el8         9.0.0-15.el8            x86_64      PASS                       
+->  'libGLU.so.1'
+9   motif                  2.3.4      16.el8         2.3.4-21.el8_10         x86_64      PASS                       
+->  'libXm.so.4'
+10  libXp                  1.0.3      3.el8          1.0.3-3.el8             x86_64      PASS                       
+->  'libXp.so.6'
+11  libpng12               1.2.57     5.el8          1.2.57-5.el8            x86_64      PASS                       
+->  'libpng12.so.0'
+12  libpng                 1.6.34     5.el8          1.6.34-5.el8            x86_64      PASS                       
+->  'libpng15.so.15'
+13  libjpeg-turbo          1.5.3      10.el8         1.5.3-12.el8            x86_64      PASS                       
+->  'libjpeg.so.62'
+14  expat                  2.2.5      3.el8          2.2.5-16.el8_10         x86_64      PASS                       
+->  'libexpat.so.1'
+15  libXtst                1.2.3      7.el8          1.2.3-7.el8             x86_64      PASS                       
+->  'libXtst.so.6'
+16  glibc-devel            2.28       72.el8_1.1     2.28-251.el8_10.14      x86_64      PASS                       
+->  'glibc header files'
+17  xorg-x11-fonts-misc    7.5        19             7.5-19.el8              noarch      PASS                       
+->  'Fonts'
+18  xorg-x11-fonts-ISO8859-1-75dpi7.5        19             7.5-19.el8              noarch      PASS                       
+->  'Courier 12pt font'
+19  gdb                    8.2        6              8.2-20.el8              x86_64      PASS                       
+->  'GNU debugger'
+20  libXScrnSaver          1.2.3      1              1.2.3-1.el8             x86_64      PASS                       
+->  'libXScrnSaver'
+21  apr                    1.6.3      9              1.6.3-12.el8            x86_64      PASS                       
+->  'APR library 64 bits'
+22  apr-util               1.6.1      6              1.6.1-9.el8             x86_64      PASS                       
+->  'APR Utility library 64 bits'
+23  xorg-x11-server-Xvfb   1.20.3     11             1.20.11-25.el8_10       x86_64      PASS                       
+->  'Xvfb'
+24  mesa-dri-drivers       19.1.4     3              23.1.4-4.el8_10         x86_64      PASS                       
+->  'Mesa drivers'
+25  openssl-devel          1.1.1c     2              1.1.1k-14.el8_6         x86_64      PASS                       
+->  'OpenSSL library'
+26  libXext                1.3.3      9              1.3.4-1.el8             x86_64      PASS                       
+->  'libXext.so.6'
+27  libxkbcommon-x11       0.8.2      1              0.9.1-1.el8             x86_64      PASS                       
+->  'libxkbcommon-x11.so.0'
+28  xcb-util-image         0.4.0      9              0.4.0-9.el8             x86_64      PASS                       
+->  'libxcb-image.so.0'
+29  xcb-util-keysyms       0.4.0      7              0.4.0-7.el8             x86_64      PASS                       
+->  'libxcb-keysyms.so.1'
+30  xcb-util-renderutil    0.3.9      10             0.3.9-10.el8            x86_64      PASS                       
+->  'libxcb-render-util.so.0'
+31  xcb-util-wm            0.4.1      12             0.4.1-12.el8            x86_64      PASS                       
+->  'libxcb-icccm.so.4'
+32  libnsl                 2.28       72             2.28-251.el8_10.14      x86_64      PASS                       
+->  'libnsl'
+
+
+Validating WRITABLE-FILE .....1 to check
+#   WRITABLE-FILE                           Exists    Status  Info                                   
+-   -------------                           ------    ------  ------------                           
+1   /dev/shm                                YES       PASS    edpSharedMemory                           
+
+
+
+Normal exit. This workstation (ece-linlabsrv01.ece.gatech.edu) status is: PASS
+Host ece-linlabsrv01.ece.gatech.edu has a Cadence supported Linux configuration.
+
+
+Exiting checkSysConf ... Good-bye
+Output is saved as /tmp/checkSysConf.ece-linlabsrv01.ece.gatech.edu-2025.04.09.12:17.518642.log

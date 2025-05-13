@@ -1,0 +1,10 @@
+DEFINE analogLib $CDSHOME/tools/dfII/etc/cdslib/artist/analogLib
+DEFINE US_8ths   $CDSHOME/tools/dfII/etc/cdslib/sheets/US_8ths
+DEFINE basic     $CDSHOME/tools/dfII/etc/cdslib/basic
+DEFINE cdsDefTechLib    $CDSHOME/tools/dfII/etc/cdsDefTechLib
+DEFINE NCSU_TechLib_FreePDK45   $PDK_DIR/ncsu_basekit/lib/NCSU_TechLib_FreePDK45
+DEFINE NCSU_Devices_FreePDK45   $PDK_DIR/ncsu_basekit/lib/NCSU_Devices_FreePDK45
+DEFINE freepdk45_cells $PDK_DIR/osu_soc/lib/freepdk45_cells
+DEFINE project_1 /nethome/rgoel68/ECE3150/project_1
+DEFINE project_3 /nethome/rgoel68/ECE3150/project_3
+DEFINE project3 /nethome/rgoel68/ECE3150/project3

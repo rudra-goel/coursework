@@ -1,0 +1,10 @@
+Virtuoso Framework License (111) was checked out successfully. Total checkout time was 0.05s.
+
+Loading hnlInit.cxt 
+*WARNING* (TECH-2000203): The technology library 'project3', which has a local technology file, is also attached to another technology library, 'NCSU_TechLib_FreePDK45', which OpenAccess does not allow. The local technology file takes precedence. 
+Either detach the second library by using techUnattachTechFile(ddGetObj("project3")) or, if appropriate, remove the local technology file by using techDeleteTechFile(techGetTechFile(ddGetObj("project3")).
+
+Running Artist Hierarchical Netlisting ...
+
+End netlisting Apr 18 03:43:35 2025
+

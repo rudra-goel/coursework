@@ -1,0 +1,37 @@
+
+;this is the testbench for the 16 bit ripple carry  adder
+;we will be perfoming a vectore simulation for this design
+
+radix	1 4 4 4 4 4 4 4 4				; define the radix for each input
+
+vname 	Cin Ain<[15:12]> Ain<[11:8]> Ain<[7:4]> Ain<[3:0]>  Bin<[15:12]> Bin<[11:8]> Bin<[7:4]> Bin<[3:0]>	; define the names of the vectors
+
+io	i i i i i i i i i				; define all the vectors to be inputs
+
+
+tunit	ns				; specify the unit of time
+
+trise	.01				; 1 ps rise time
+tfall	.01				; 1ps fall time
+
+vih	1.0				; the high voltage of the input
+vol	0.0				; the low voltage of the input
+
+
+voh	0.9				; 90% for rise time delay
+vol 	0.1				; 10% for fall time delay
+
+
+; this following part is the actual vector simulation 
+
+0	0	0	0 	0 	0	0 	0	0	0
+5	1	0 	0 	0 	0	0 	0	0	0		; test if adding all zeros produces all zeros
+10	1	0	0	0	0	0	0	0	0		; test is the smallest Cin bit works
+15	1	A	B	C	D	0	0	0	0		; test if A input passes
+20	1	0	0	0	0	1	2	3	4		; test if B input passes
+25	0 	0	0	0	1	0	0	0	1		; cout should be zero and bit 1 of op should be 0
+30	0	F	0	F	0	0	F	0	F		; should be an OR producing FFFF with no cout
+35	1 	F	0	0	0	F	0	0	0		; should be E with Cout being high
+
+
+
