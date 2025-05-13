@@ -1,0 +1,5 @@
+1. As a processors clock frequency increase, the processor requires more power and results in it producing more heat. The maximum power density is around 100 W/cm^2. Since there is not a cost-effective way to cool the processors, the clock frequency has also plateaued.
+
+2. The physical size of transistors are decreasing, which allows for a higher density of transistors in processors. Smaller transistors allow the microprocessors to take up the same space while having greater computational power and improved performance.
+
+3. Cerebras WSE-2 with 2.6 trillion transistors
