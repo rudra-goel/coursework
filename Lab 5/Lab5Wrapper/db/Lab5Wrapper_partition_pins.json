@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "resetn_out",
+					"strict" : false
+				},
+				{
+					"name" : "ajar_out",
+					"strict" : false
+				},
+				{
+					"name" : "KEY0",
+					"strict" : false
+				},
+				{
+					"name" : "inner_in",
+					"strict" : false
+				},
+				{
+					"name" : "outer_in",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

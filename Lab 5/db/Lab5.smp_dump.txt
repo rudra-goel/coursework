@@ -1,0 +1,6 @@
+
+State Machine - |door_state_machine|state
+Name state.undesireable_twice state.nothing_bad state.undesireable_once 
+state.undesireable_once 0 0 0 
+state.nothing_bad 0 1 1 
+state.undesireable_twice 1 0 1 

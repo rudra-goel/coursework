@@ -1,0 +1,19 @@
+
+State Machine - |TrainTop|TrainController:inst|current_state
+Name current_state.Aarrived_B2CW current_state.Aarrived_B2CCW current_state.Aarrived_B3CCW current_state.A1CCW_B2CW current_state.A1CCW_B2CCW current_state.A1CCW_B3CCW 
+current_state.A1CCW_B3CCW 0 0 0 0 0 0 
+current_state.A1CCW_B2CCW 0 0 0 0 1 1 
+current_state.A1CCW_B2CW 0 0 0 1 0 1 
+current_state.Aarrived_B3CCW 0 0 1 0 0 1 
+current_state.Aarrived_B2CCW 0 1 0 0 0 1 
+current_state.Aarrived_B2CW 1 0 0 0 0 1 
+
+State Machine - |TrainTop|TrainSetSimulator:inst1|SCOMP:inst6|STATE
+Name STATE.CU_ISTORE STATE.CU_ILOAD STATE.CU_OUT STATE.CU_STORE STATE.CU_DATA STATE.CU_INSTR STATE.RESET_PC 
+STATE.RESET_PC 0 0 0 0 0 0 0 
+STATE.CU_INSTR 0 0 0 0 0 1 1 
+STATE.CU_DATA 0 0 0 0 1 0 1 
+STATE.CU_STORE 0 0 0 1 0 0 1 
+STATE.CU_OUT 0 0 1 0 0 0 1 
+STATE.CU_ILOAD 0 1 0 0 0 0 1 
+STATE.CU_ISTORE 1 0 0 0 0 0 1 

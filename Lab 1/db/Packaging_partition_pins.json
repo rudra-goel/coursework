@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "RUN",
+					"strict" : false
+				},
+				{
+					"name" : "ALERT",
+					"strict" : false
+				},
+				{
+					"name" : "DIVERT",
+					"strict" : false
+				},
+				{
+					"name" : "EStop",
+					"strict" : false
+				},
+				{
+					"name" : "Continue",
+					"strict" : false
+				},
+				{
+					"name" : "ItemPresent",
+					"strict" : false
+				},
+				{
+					"name" : "Damaged",
+					"strict" : false
+				},
+				{
+					"name" : "Oversize",
+					"strict" : false
+				},
+				{
+					"name" : "Overweight",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

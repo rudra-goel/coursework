@@ -1,0 +1,15 @@
+|Packaging
+RUN <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+Continue => inst1.IN0
+ItemPresent => inst8.IN0
+ItemPresent => inst.IN0
+ItemPresent => inst5.IN0
+Damaged => inst8.IN1
+Damaged => inst.IN1
+EStop => inst3.IN0
+ALERT <= inst.DB_MAX_OUTPUT_PORT_TYPE
+DIVERT <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+Oversize => inst6.IN0
+Overweight => inst6.IN1
+
+

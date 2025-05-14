@@ -1,0 +1,141 @@
+$comment
+	File created using the following command:
+		vcd file Packaging.msim.vcd -direction
+$end
+$date
+	Thu Aug 29 17:11:49 2024
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module packaging_vhd_vec_tst $end
+$var wire 1 ! ALERT $end
+$var wire 1 " Continue $end
+$var wire 1 # Damaged $end
+$var wire 1 $ DIVERT $end
+$var wire 1 % EStop $end
+$var wire 1 & ItemPresent $end
+$var wire 1 ' Oversize $end
+$var wire 1 ( Overweight $end
+$var wire 1 ) RUN $end
+
+$scope module i1 $end
+$var wire 1 * gnd $end
+$var wire 1 + vcc $end
+$var wire 1 , unknown $end
+$var wire 1 - devoe $end
+$var wire 1 . devclrn $end
+$var wire 1 / devpor $end
+$var wire 1 0 ww_devoe $end
+$var wire 1 1 ww_devclrn $end
+$var wire 1 2 ww_devpor $end
+$var wire 1 3 ww_RUN $end
+$var wire 1 4 ww_Continue $end
+$var wire 1 5 ww_ItemPresent $end
+$var wire 1 6 ww_Damaged $end
+$var wire 1 7 ww_EStop $end
+$var wire 1 8 ww_ALERT $end
+$var wire 1 9 ww_DIVERT $end
+$var wire 1 : ww_Oversize $end
+$var wire 1 ; ww_Overweight $end
+$var wire 1 < \RUN~output_o\ $end
+$var wire 1 = \ALERT~output_o\ $end
+$var wire 1 > \DIVERT~output_o\ $end
+$var wire 1 ? \EStop~input_o\ $end
+$var wire 1 @ \Continue~input_o\ $end
+$var wire 1 A \ItemPresent~input_o\ $end
+$var wire 1 B \Damaged~input_o\ $end
+$var wire 1 C \inst7~0_combout\ $end
+$var wire 1 D \inst~0_combout\ $end
+$var wire 1 E \Oversize~input_o\ $end
+$var wire 1 F \Overweight~input_o\ $end
+$var wire 1 G \inst4~0_combout\ $end
+$var wire 1 H \ALT_INV_Overweight~input_o\ $end
+$var wire 1 I \ALT_INV_Oversize~input_o\ $end
+$var wire 1 J \ALT_INV_Damaged~input_o\ $end
+$var wire 1 K \ALT_INV_ItemPresent~input_o\ $end
+$var wire 1 L \ALT_INV_Continue~input_o\ $end
+$var wire 1 M \ALT_INV_EStop~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+1$
+0%
+1&
+1'
+0(
+1)
+0*
+1+
+x,
+1-
+1.
+1/
+10
+11
+12
+13
+04
+15
+06
+07
+08
+19
+1:
+0;
+1<
+0=
+1>
+0?
+0@
+1A
+0B
+1C
+0D
+1E
+0F
+1G
+1H
+0I
+1J
+0K
+1L
+1M
+$end
+#440000
+0'
+0:
+0E
+1I
+0G
+0>
+09
+0$
+#680000
+1(
+1;
+1F
+0H
+1G
+1>
+19
+1$
+#1120000
+0(
+0;
+0F
+1H
+0G
+0>
+09
+0$
+#3200000
